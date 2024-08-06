@@ -21,17 +21,23 @@
     };
 
     macros {
-        Copy: Copy {
+        copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp C>;
+            bindings = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
             label = "COPY";
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp V>;
+            bindings = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
+                ;
             label = "PASTE";
         };
 
