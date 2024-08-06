@@ -22,6 +22,20 @@
 
     macros {
 
+        Copy: Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp C>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp V>;
+            label = "PASTE";
+        };
+
         smiley: smiley {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
