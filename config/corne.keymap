@@ -22,10 +22,20 @@
 
     macros {
 
+      //  Copy: Copy {
+      //      compatible = "zmk,behavior-macro";
+      //      #binding-cells = <0>;
+      //      bindings = <&kp LCTRL &kp C>;
+      //      label = "COPY";
+      //  };
+
         Copy: Copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp C>;
+            bindings = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
             label = "COPY";
         };
 
