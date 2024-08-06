@@ -21,7 +21,6 @@
     };
 
     macros {
-        
 
         smiley: smiley {
             compatible = "zmk,behavior-macro";
